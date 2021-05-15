@@ -1,9 +1,7 @@
 require "./event"
 
 class Tempest::StationObs < Tempest::Event
-  property obs : Array(Tuple(                                                                   # 1621035352,0,       1.05,    2.15,    199,   3,     958.7,   11.8,    61,    16375, 1.02,    136
-Int64, Float64, Float64, Float64, Int32, Int32, Float64, Float64, Int32, Int32, Float64, Int32, # 0,     0,     0,     0,     2.68,    1,     0,       null,    null,     0
-Float64, Int32, Int32, Int32, Float64, Int32, Float64, Float64?, Float64?, Int32))
+  property obs : Array(Tuple(Int64, Float64, Float64, Float64, Int32, Int32, Float64, Float64, Int32, Int32, Float64, Int32, Float64, Int32, Int32, Int32, Float64, Int32, Float64, Float64?, Float64?, Int32))
 
   def observations
     obs.map { |observation| Tempest::Station.new(*observation) }
