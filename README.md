@@ -4,6 +4,14 @@ classes and basic helper methods for interacting with Tempest weather stations
 
 [![Build Status](https://github.com/stakach/tempest/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/stakach/tempest/actions/workflows/CI.yml)
 
+## Links
+
+[Tempest Weather Station](https://weatherflow.com/tempest-weather-system/)
+
+* [API Overview](https://weatherflow.github.io/Tempest/api/)
+* [Rest API](https://weatherflow.github.io/Tempest/api/swagger/#!/stations/getStations)
+* [Websocket API](https://weatherflow.github.io/Tempest/api/ws.html)
+
 ## Usage
 
 Doesn't implement any logic, just the basics to interact with the API - throw this in crystal play to see the payloads
