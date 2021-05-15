@@ -2,6 +2,8 @@
 
 classes and basic helper methods for interacting with Tempest weather stations
 
+[![Build Status](https://github.com/stakach/tempest/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/stakach/tempest/actions/workflows/CI.yml)
+
 ## Usage
 
 Doesn't implement any logic, just the basics to interact with the API - throw this in crystal play to see the payloads
