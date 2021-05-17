@@ -13,7 +13,7 @@ class Tempest::Client
       }
     )
 
-    raise "failed to obtain list of locations" unless response.success?
+    raise "failed to obtain list of locations #{response.status} - #{response.body}" unless response.success?
 
     NamedTuple(stations: Array(Tempest::Location)).from_json(response.body)[:stations]
   end
